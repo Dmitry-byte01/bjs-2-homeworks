@@ -59,9 +59,11 @@ function getTriangle(a, b, c) {
 }
 
 
-module.exports = {
-  parseCount,
-  validateCount,
-  Triangle,
-  getTriangle
-};
+if (typeof module !== "undefined") {
+  module.exports = {
+    parseCount,
+    validateCount,
+    Triangle,
+    getTriangle
+  };
+}
